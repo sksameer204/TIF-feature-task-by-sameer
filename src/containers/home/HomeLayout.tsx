@@ -35,7 +35,7 @@ const HomeLayout = () => {
 
   // data
   const [requisitionForm, setRequisitionForm] = useState({
-    requisitionTitle: '', noOfOpenings: '', urgency: "", gender: ""
+    requisitionTitle: '', noOfOpenings: 0, urgency: '', gender: ''
   });
 
   const [jobDetailsForm, setJobDetailsForm] = useState({
