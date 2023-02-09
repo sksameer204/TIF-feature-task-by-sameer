@@ -41,7 +41,7 @@ const RequisitionDetailsForm: React.FC<{
       gender: Yup.string().required("Gender is required"),
     }),
     onSubmit: (values) => {
-      // setRequisitionForm(values);
+      setRequisitionForm(values);
       handleTab(1);
     },
   });
