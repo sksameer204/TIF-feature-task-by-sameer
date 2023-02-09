@@ -28,13 +28,16 @@ const InterviewDetailsForm: React.FC<{
       interviewDuration: "",
       interviewLanguage: "",
     },
+    // ------
+    // Validations of interview settings form
+    // ------
     validationSchema: Yup.object().shape({
       interviewMode: Yup.string().required("Urgency is required"),
       interviewDuration: Yup.string().required("Urgency is required"),
       interviewLanguage: Yup.string().required("Urgency is required"),
     }),
     onSubmit: (values) => {
-      console.log(values)
+      setInterviewSettingsForm(values)
       alert("Form successfully submitted");
     },
   });
@@ -47,7 +50,7 @@ const InterviewDetailsForm: React.FC<{
           placeholder="Select interview mode"
           name="interviewMode"
           options={interviewModeOptions}
-          onChange={setFieldValue}        
+          onChange={setFieldValue}
           onBlur={setFieldTouched}
           value={values?.interviewMode}
           error={errors?.interviewMode}

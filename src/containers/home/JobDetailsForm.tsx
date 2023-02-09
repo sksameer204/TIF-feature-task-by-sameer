@@ -30,7 +30,11 @@ const JobDetailsForm: React.FC<{
       // jobPosition: Yup.string().required("Job position is required"),
     }),
     onSubmit: (values) => {
-      console.log(values)
+      // console.log(values)
+
+      // ------
+      // Bug report ---
+      // ------
       handleTab(2);
     },
   });
