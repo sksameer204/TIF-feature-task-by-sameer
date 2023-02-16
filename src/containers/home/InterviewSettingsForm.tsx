@@ -32,9 +32,9 @@ const InterviewDetailsForm: React.FC<{
     // Validations of interview settings form
     // ------
     validationSchema: Yup.object().shape({
-      interviewMode: Yup.string().required("Urgency is required"),
-      interviewDuration: Yup.string().required("Urgency is required"),
-      interviewLanguage: Yup.string().required("Urgency is required"),
+      interviewMode: Yup.string().required("Interview Mode is required"),
+      interviewDuration: Yup.string().required("Interview Duration is required"),
+      interviewLanguage: Yup.string().required("Interview Language is required"),
     }),
     onSubmit: (values) => {
       setInterviewSettingsForm(values)
